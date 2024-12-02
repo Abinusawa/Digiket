@@ -1,42 +1,60 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+/* app.css */
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Main App Wrapper */
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the app covers the full viewport height */
+    background-color: #f9f9f9; /* Background color for the app */
+    color: #333; /* Default text color */
+    font-family: 'Arial', sans-serif; /* Default font for the app */
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Header and Footer Styling */
+  .App-header {
+    /* background-color:; Primary color */
+    color: white;
+    padding: 1rem;
+    text-align: center;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  .App-footer {
+    /* background-color: ; */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+  
+  /* Main Content Area */
+  .App-content {
+    flex: 1; /* Fill available space between header and footer */
+    padding: 1rem;
+    background-color: white; /* Default background for content */
+    border-radius: 8px;
+    margin: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Animations */
+  /* .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  } */
+  
+  /* Media Queries */
+  /* @media (max-width: 768px) {
+    .App-content {
+      margin: 0.5rem;
+      padding: 0.5rem;
+    }
+  } */
+  
