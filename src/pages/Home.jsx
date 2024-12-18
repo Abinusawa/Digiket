@@ -1,9 +1,13 @@
 import React from 'react'
+import Home_Header from '../containers/Home_Header'
 
 const Home = () => {
   return (
     <div>
-      <p>Home page</p>
+      <Home_Header />
+      {/* <Home_MidSection /> */}
+      {/* <Home_Footer /> */}
+     
     </div>
   )
 }
